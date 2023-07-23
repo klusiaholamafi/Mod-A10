@@ -1,0 +1,15 @@
+for i,v in next, getgc(true) do
+   if type(v) == "table" and rawget(v, "BurstDuration") then
+      rawset(v, "BurstDuration", 20)
+   end
+end
+for i,v in next, getgc(true) do
+   if type(v) == "table" and rawget(v, "ReloadTime") then
+      rawset(v, "ReloadTime", 0.05)
+   end
+end
+for i,v in next, getgc(true) do
+   if type(v) == "table" and rawget(v, "Spread") then
+      rawset(v, "Spread", 0.2)
+   end
+end
